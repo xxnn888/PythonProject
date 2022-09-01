@@ -91,3 +91,6 @@ if __name__ == '__main__':
 
 
    # https://www.lagou.com/lbs/getAllCitySearchLabels.json
+# for city in all_cities:
+#     print(f'***********************正在爬取 {city} 肯德基门店信息数据*************************')
+#     send_request(city)
