@@ -55,7 +55,7 @@ def send_request(keyword):
 
                 # 4、保存数据
                 print('正在爬取：', storeName)
-                with open('肯德基.csv', mode='a', encoding='utf-8', newline='') as csvfile:  # newline=''  指定一行一行写入
+                with open('肯德基1.csv', mode='a', encoding='utf-8', newline='') as csvfile:  # newline=''  指定一行一行写入
                     csvwriter = csv.writer(csvfile, delimiter=',')  # delimiter=','  csv数据的分隔符
                     csvwriter.writerow([storeName, cityName, addressDetail, pro])  # 序列化数据，写入csv
             time.sleep(0.2)
