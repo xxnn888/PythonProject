@@ -1,6 +1,8 @@
 import requests
 import csv
 import time
+
+
 def get_page(keyword):
     global base_url
     base_url = 'http://www.kfc.com.cn/kfccda/ashx/GetStoreList.ashx?op=keyword'
