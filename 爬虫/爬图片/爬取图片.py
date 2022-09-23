@@ -1,7 +1,7 @@
 import requests
 import parsel
 
-for page in range(1, 5):
+for page in range(1, 10):
     url = f"https://www.kanxiaojiejie.com/page/{page}"
     response = requests.get(url)
     HTML_data = response.text
