@@ -16,5 +16,3 @@ if b > c:
     c = b
     b = temp
 print(a, b, c)
-
-
