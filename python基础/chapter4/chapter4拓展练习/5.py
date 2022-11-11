@@ -1,3 +1,4 @@
+
 str = input()
 str2 = list(str)
 print(str2)

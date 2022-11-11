@@ -12,7 +12,8 @@ headers = {
 }
 response = requests.get(url=url, headers=headers)
 # print(response.text)
-html_data = re.findall('<li>< a href=" ">(.*?)</ a>', response.text)
+html_data = re.findall('<li><a href="/song\?id=(\d+)">(.*?)</a>', response.text)
+# print(html_data)
 for num_id, title in html_data:
     music_url = f'http://music.163.com/song/media/outer/url?id={num_id}.mp3'
     music_content = requests.get(url=music_url, headers=headers).content
